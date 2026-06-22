@@ -2,53 +2,6 @@
 
 A simple e-commerce web application built with **Angular 16** and Angular Material.
 
-### 1. **Modular Architecture**
-
-- **Feature Modules**: The application is organized into feature modules (`ProductModule`, `CartModule`) for better code organization and maintainability
-- **Lazy Loading**: Routes are configured to lazy load modules only when needed
-- **AppModule**: Root module that orchestrates all feature modules and core services
-
-### 2. **Services & Dependency Injection**
-
-- **ProductService**: Handles all product-related HTTP requests (fetching product list)
-- **CartService**: Manages cart operations (add to cart, get cart items, clear cart, checkout)
-- **Injectable Decorator**: Services are provided at the root level using `providedIn: 'root'` for singleton pattern
-- **Constructor Injection**: Dependencies are injected through component and service constructors
-
-### 3. **HTTP Client Module**
-
-- **HttpClientModule**: Used for making HTTP requests to the API
-- **RxJS Observables**: All HTTP calls return Observables for reactive programming
-- **Observable Operators**: Services expose Observables that components subscribe to
-
-### 4. **Routing**
-
-- **AppRoutingModule**: Configures application routes for navigation between product list and cart view
-- **Feature-based Routing**: Each feature module has its own routing configuration
-
-### 5. **Components & Templates**
-
-- **ProductListComponent**: Displays list of products, allows adding to cart
-- **CartViewComponent**: Displays cart items and checkout functionality
-- **Data Binding**: Two-way and property binding for dynamic UI updates
-- **Event Binding**: Click and form submission handlers
-
-### 6. **Material Design**
-
-- **Angular Material**: Professional UI components including toolbar and buttons
-- **Material Theming**: Consistent visual design across the application
-- **Layout Modules**: Flex layout for responsive design
-
-### 7. **TypeScript & Models**
-
-- **Product Model**: Strongly typed product interface ensuring type safety
-- **Generics**: Services use generics for flexible HTTP operations
-
-### 8. **Environment Configuration**
-
-- **Environment Files**: Separate configuration for development and production environments
-- **API URL Configuration**: Centralized API endpoint management through environment variables
-
 ## API Mocking with Mockon
 
 This project uses **Mockon** to mock all backend APIs during development and testing.
